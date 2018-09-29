@@ -1,3 +1,4 @@
+package java;
 
 public class StringUtil {
     /**
@@ -19,7 +20,7 @@ public class StringUtil {
     public static String remove_duplicate(String a) {
         for (int i = 0; i < a.length(); i++) {
             if (a.substring(i).equals(a.substring(i + 1))) {
-                a = a.substring(i + 1, a.size() - 1);
+                a = a.substring(i + 1, a.length() - 1);
                 i -= 1;
             }
         }
